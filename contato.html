@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contato.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" href="./favicon_created_by_logaster.ico">
+
+    <style>
+    form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    }
+
+    form div + div {
+    margin-top: 1em;
+    }
+
+    label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    }
+
+    input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    }
+
+    input:focus, textarea:focus {
+    border-color: #000;
+    }
+
+    textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+    }
+
+    .button {
+    padding-left: 90px; 
+    }
+    button {
+    margin-left: .5em;
+    }
+    </style>
+
+
+    <title>Onde Comer</title>
+</head>
+<body>
+    <header id="header" class="container">
+
+        <a id="logo" href="index.html">Logo</a>
+            <nav id="nav">
+                <button id="btn-mobile" class="bt">Menu
+                    <span id="hamburguer"></span>
+                </button>
+                    <ul id="menu">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./pontosturisticos.html">Pontos Turísticos</a></li>
+                        <li><a href="./ecoturismo.html">Ecoturismo</a></li>
+                        <li><a href="./turismourbano.html">Turismo Urbano</a></li>
+                        <li><a href="./contato.html">Contatos</a></li>
+                    </ul>
+            </nav>
+    </header>
+    <script src="./documento.js"></script>
+
+    <div class="topo">
+        <h1>Contato</h1>
+        <p>
+            Para entrar em Contato querendo indicar um possível lugar para incluirmos nas nossas rotas ou para relatar um problema, preencha os campos abaixo.
+        </p>
+    </div>
+
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" />
+        </div>
+        <div>
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Enviar mensagem</button>
+        </div>
+    </form>
+    </body>
+    </html>
+</body>
+</html>

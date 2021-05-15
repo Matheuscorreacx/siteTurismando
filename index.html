@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon_created_by_logaster.ico">
+    <title>Turismando</title>
+</head>
+<body>
+    <header id="header" class="cabecalho">
+        <a id="logo" href="index.html">Logo</a>
+          <nav id="nav">   
+              <button id="btn-mobile" class="bt">Menu
+                  
+              <span id="hamburguer"></span>
+              </button>
+                <ul id="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pontosturisticos.html">Pontos Turísticos</a></li>
+                    <li><a href="./ecoturismo.html">Ecoturismo</a></li>
+                    <li><a href="./turismourbano.html">Turismo Urbano</a></li>
+                    <li><a href="./contato.html">Contatos</a></li>
+                </ul>
+            </nav>      
+    </header>
+    <script src="./documento.js"></script>
+    <!--Inicio da parte de Slide-->
+    <!--Image slider start-->
+    <main class="container">
+        <div class="slider">
+            <div class="quadrado">
+                <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!--radio buttons end-->
+                    <!--slide image start-->
+                        <div class="slide first">
+                            <img src="./img-urban-haking (1).jpg" width="350" height="300">
+                        </div>
+                        <div class="slide">
+                            <img src="./Praça-GV.jpg" width="380" height="350">
+                        </div>
+                        <div class="slide">
+                            <img src="./img-countryclub.jpg" alt="">
+                        </div>
+                    <!--slide image end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                </div>
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+                
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter ++;
+            if(counter > 3){
+                counter = 1;
+            }
+        },5000);
+        </script>
+        <!--Tentaiva de fazer a box-->
+    <div class="row">
+        <div class="box">
+            <img src="./11373180_N10F-FNHf4GGKIJZbqP8CQ8Zrf8w_JqA0omGSqemb4w.jpg" class="box-img">
+            <h3>Pastel Mania</h3>
+            <p>
+                Comer um Pastel de verdade não tem preço, um dos estabelecimentos mais antigos de Nova Friburgo. Uma Lanchonete que carrega algo muito 
+                maior do que o sabor, carrega a história.
+            </p>
+         
+            <a href="./bonnapizza.html"><button class="btn-mais">veja mais</button></a>
+        </div>
+            <div class="box">
+                <img src="./bonna-pizza.jpg" class="box-img">
+                <h3>Bonna Pizza</h3>
+                <p>
+                    Conheça a mais tradicional das Pizzas de Nova Friburgo, fundada a mais de 20 anos.
+                </p>
+                <a href="./bonnapizza.html"><button class="btn-mais">veja mais</button></a>
+            </div> 
+                <div c class="box">
+                    <img src="./auau-hotdog.jpg" class="box-img">
+                    <h3>Au au Hot-dog</h3>
+                    <p>
+                        O melhor Cachorro quente tem nome, sabor e preço.
+                    </p>
+                    <a href="./bonnapizza.html"><button class="btn-mais">veja mais</button></a>
+                </div>
+        <!--Final da tentativa-->
+        <!--Inicio da box-2-->
+        <br><br><br><br>
+        <div class="row">
+            <div class="box2">
+                <h3>Sobre Nova Friburgo</h3>
+                <p>
+                    Das mais belas paisagens do alto das montanhas às compras nas lojas de lingerie, visitar Nova Friburgo, na Região Serrana do Rio, é um programa que inclui passeios ao ar livre, tranquilidade e boa gastronomia.
+                    No dia 16 de maio, a capital da moda íntima completa 203 anos de muitas tradições e muita história.
+                </p>
+            </div>
+            <div class="depoimento">
+                <img class="depo-img" src="./poco-belo-lumiar.jpg" width="240px" height="200px">
+                <h4>Marco Aurélio</h4>
+                <p>
+                    "Um belo local, de fácil acesso, com uma pequena queda d'água e um lindo poço para se refrescar, inclusive com crianças, além claro, de ser um belo local para tirar fotos."
+                </p>
+            </div>
+        </div>
+        <div class="map">
+            <h4 class="chegar">
+                <p>
+                    Saiba como chegar em Nova Friburgo.
+                </p>
+            </h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.916115087675!2d-42.536572385576314!3d-22.28116722144613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x978a8b4a3fa2c3%3A0x713fab68c72ea6b5!2sNova%20Friburgo!5e0!3m2!1spt-BR!2sbr!4v1621021532918!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+</body>
+</html>
